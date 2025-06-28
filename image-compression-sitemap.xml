@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compression Sitemap | PixelOptimize</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --primary-dark: #3a56d4;
+            --secondary: #7209b7;
+            --accent: #f72585;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --success: #4cc9f0;
+            --card-bg: #ffffff;
+            --bg-gradient: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
+            --border-radius: 16px;
+            --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f2f5;
+            color: var(--dark);
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e7eb 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: var(--card-bg);
+            padding: 1.2rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .logo-icon {
+            color: var(--accent);
+            font-size: 2.2rem;
+        }
+        
+        .sitemap-hero {
+            text-align: center;
+            padding: 5rem 0 3rem;
+        }
+        
+        .sitemap-hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .sitemap-hero p {
+            font-size: 1.3rem;
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .sitemap-container {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 2.5rem;
+            margin: 2rem 0 4rem;
+        }
+        
+        .sitemap-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .sitemap-header h2 {
+            font-size: 2.2rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+        
+        .sitemap-header p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .sitemap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .sitemap-card {
+            background: var(--light);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-left: 4px solid var(--primary);
+        }
+        
+        .sitemap-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .sitemap-links {
+            list-style: none;
+            padding-left: 65px;
+        }
+        
+        .sitemap-links li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .sitemap-links li:last-child {
+            border-bottom: none;
+        }
+        
+        .sitemap-links a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .sitemap-links a:hover {
+            color: var(--primary);
+            padding-left: 5px;
+        }
+        
+        .xml-section {
+            background: #f0f7ff;
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        .xml-section h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .xml-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+        
+        .xml-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            min-width: 300px;
+        }
+        
+        .xml-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .xml-url {
+            background: var(--light);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            font-family: monospace;
+            word-break: break-all;
+            margin: 1rem 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            margin-top: 1rem;
+            box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(67, 97, 238, 0.4);
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0 2rem;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-section h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1.2rem;
+            position: relative;
+        }
+        
+        .footer-section h4::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--success);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #495057;
+            color: #adb5bd;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .sitemap-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .sitemap-container {
+                padding: 1.5rem;
+            }
+            
+            .sitemap-links {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">📷</div>
+                    <h1>PixelOptimize</h1>
+                </div>
+                <nav>
+                    <a href="index.html" class="btn">Back to Home</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="sitemap-hero">
+        <div class="container">
+            <h1>Website Sitemap</h1>
+            <p>Explore the complete structure of our image compression platform</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="sitemap-container">
+            <div class="sitemap-header">
+                <h2>Image Compression Tool Sitemap</h2>
+                <p>Our organized structure helps search engines index our content and users navigate our platform</p>
+            </div>
+            
+            <div class="sitemap-grid">
+                <div class="sitemap-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="card-title">Main Pages</div>
+                    </div>
+                    <ul class="sitemap-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="pricing.html"><i class="fas fa-chevron-right"></i> Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sitemap-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-compress-alt"></i>
+                        </div>
+                        <div class="card-title">Compression Tools</div>
+                    </div>
+                    <ul class="sitemap-links">
+                        <li><a href="compressor.html"><i class="fas fa-chevron-right"></i> Image Compressor</a></li>
+                        <li><a href="batch.html"><i class="fas fa-chevron-right"></i> Batch Compression</a></li>
+                        <li><a href="convert.html"><i class="fas fa-chevron-right"></i> Format Converter</a></li>
+                        <li><a href="resize.html"><i class="fas fa-chevron-right"></i> Image Resizer</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sitemap-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="card-title">Resources</div>
+                    </div>
+                    <ul class="sitemap-links">
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="tutorials.html"><i class="fas fa-chevron-right"></i> Tutorials</a></li>
+                        <li><a href="faq.html"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="case-studies.html"><i class="fas fa-chevron-right"></i> Case Studies</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sitemap-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="card-title">Legal</div>
+                    </div>
+                    <ul class="sitemap-links">
+                        <li><a href="privacy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="terms.html"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                        <li><a href="cookies.html"><i class="fas fa-chevron-right"></i> Cookie Policy</a></li>
+                        <li><a href="gdpr.html"><i class="fas fa-chevron-right"></i> GDPR Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="xml-section">
+                <h3>XML Sitemap for Search Engines</h3>
+                <p>Our XML sitemap helps search engines discover and index all pages on our website</p>
+                
+                <div class="xml-info">
+                    <div class="xml-card">
+                        <h4>Sitemap File Name</h4>
+                        <div class="xml-url">image-compression-sitemap.xml</div>
+                        <p>This is the recommended SEO-friendly name</p>
+                    </div>
+                    
+                    <div class="xml-card">
+                        <h4>Sitemap Location</h4>
+                        <div class="xml-url">https://yourdomain.com/image-compression-sitemap.xml</div>
+                        <p>Accessible at your website root</p>
+                    </div>
+                </div>
+                
+                <a href="#" class="btn">
+                    <i class="fas fa-download"></i> Download Sitemap XML
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>PixelOptimize</h4>
+                    <p>Advanced image compression technology for faster websites and better storage management.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="compressor.html">Compression Tool</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="api.html">Developer API</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 PixelOptimize. All rights reserved. This sitemap is updated monthly.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
